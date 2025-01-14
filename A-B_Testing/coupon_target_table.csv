@@ -1,0 +1,301 @@
+﻿mem_no,cpn_nm,cpn_available_amt,cpn_issued_dt,group_class
+1,null,null,null,CONTROL
+2,null,null,null,CONTROL
+3,null,null,null,CONTROL
+4,null,null,null,CONTROL
+5,null,null,null,CONTROL
+6,null,null,null,CONTROL
+7,null,null,null,CONTROL
+8,null,null,null,CONTROL
+9,null,null,null,CONTROL
+10,null,null,null,CONTROL
+11,null,null,null,CONTROL
+12,null,null,null,CONTROL
+13,null,null,null,CONTROL
+14,null,null,null,CONTROL
+15,null,null,null,CONTROL
+16,null,null,null,CONTROL
+17,null,null,null,CONTROL
+18,null,null,null,CONTROL
+19,null,null,null,CONTROL
+20,null,null,null,CONTROL
+21,null,null,null,CONTROL
+22,null,null,null,CONTROL
+23,null,null,null,CONTROL
+24,null,null,null,CONTROL
+25,null,null,null,CONTROL
+26,null,null,null,CONTROL
+27,null,null,null,CONTROL
+28,null,null,null,CONTROL
+29,null,null,null,CONTROL
+30,null,null,null,CONTROL
+31,null,null,null,CONTROL
+32,null,null,null,CONTROL
+33,null,null,null,CONTROL
+34,null,null,null,CONTROL
+35,null,null,null,CONTROL
+36,null,null,null,CONTROL
+37,null,null,null,CONTROL
+38,null,null,null,CONTROL
+39,null,null,null,CONTROL
+40,null,null,null,CONTROL
+41,null,null,null,CONTROL
+42,null,null,null,CONTROL
+43,null,null,null,CONTROL
+44,null,null,null,CONTROL
+45,null,null,null,CONTROL
+46,null,null,null,CONTROL
+47,null,null,null,CONTROL
+48,null,null,null,CONTROL
+49,null,null,null,CONTROL
+50,null,null,null,CONTROL
+51,null,null,null,CONTROL
+52,null,null,null,CONTROL
+53,null,null,null,CONTROL
+54,null,null,null,CONTROL
+55,null,null,null,CONTROL
+56,null,null,null,CONTROL
+57,null,null,null,CONTROL
+58,null,null,null,CONTROL
+59,null,null,null,CONTROL
+60,null,null,null,CONTROL
+61,null,null,null,CONTROL
+62,null,null,null,CONTROL
+63,null,null,null,CONTROL
+64,null,null,null,CONTROL
+65,null,null,null,CONTROL
+66,null,null,null,CONTROL
+67,null,null,null,CONTROL
+68,null,null,null,CONTROL
+69,null,null,null,CONTROL
+70,null,null,null,CONTROL
+71,null,null,null,CONTROL
+72,null,null,null,CONTROL
+73,null,null,null,CONTROL
+74,null,null,null,CONTROL
+75,null,null,null,CONTROL
+76,null,null,null,CONTROL
+77,null,null,null,CONTROL
+78,null,null,null,CONTROL
+79,null,null,null,CONTROL
+80,null,null,null,CONTROL
+81,null,null,null,CONTROL
+82,null,null,null,CONTROL
+83,null,null,null,CONTROL
+84,null,null,null,CONTROL
+85,null,null,null,CONTROL
+86,null,null,null,CONTROL
+87,null,null,null,CONTROL
+88,null,null,null,CONTROL
+89,null,null,null,CONTROL
+90,null,null,null,CONTROL
+91,null,null,null,CONTROL
+92,null,null,null,CONTROL
+93,null,null,null,CONTROL
+94,null,null,null,CONTROL
+95,null,null,null,CONTROL
+96,null,null,null,CONTROL
+97,null,null,null,CONTROL
+98,null,null,null,CONTROL
+99,null,null,null,CONTROL
+100,null,null,null,CONTROL
+101,5% off coupon,1000000,12/06/2024,TEST1_percent
+102,5% off coupon,1000000,12/06/2024,TEST1_percent
+103,5% off coupon,1000000,12/06/2024,TEST1_percent
+104,5% off coupon,1000000,12/06/2024,TEST1_percent
+105,5% off coupon,1000000,12/06/2024,TEST1_percent
+106,5% off coupon,1000000,12/06/2024,TEST1_percent
+107,5% off coupon,1000000,12/06/2024,TEST1_percent
+108,5% off coupon,1000000,12/06/2024,TEST1_percent
+109,5% off coupon,1000000,12/06/2024,TEST1_percent
+110,5% off coupon,1000000,12/06/2024,TEST1_percent
+111,5% off coupon,1000000,12/06/2024,TEST1_percent
+112,5% off coupon,1000000,12/06/2024,TEST1_percent
+113,5% off coupon,1000000,12/06/2024,TEST1_percent
+114,5% off coupon,1000000,12/06/2024,TEST1_percent
+115,5% off coupon,1000000,12/06/2024,TEST1_percent
+116,5% off coupon,1000000,12/06/2024,TEST1_percent
+117,5% off coupon,1000000,12/06/2024,TEST1_percent
+118,5% off coupon,1000000,12/06/2024,TEST1_percent
+119,5% off coupon,1000000,12/06/2024,TEST1_percent
+120,5% off coupon,1000000,12/06/2024,TEST1_percent
+121,5% off coupon,1000000,12/06/2024,TEST1_percent
+122,5% off coupon,1000000,12/06/2024,TEST1_percent
+123,5% off coupon,1000000,12/06/2024,TEST1_percent
+124,5% off coupon,1000000,12/06/2024,TEST1_percent
+125,5% off coupon,1000000,12/06/2024,TEST1_percent
+126,5% off coupon,1000000,12/06/2024,TEST1_percent
+127,5% off coupon,1000000,12/06/2024,TEST1_percent
+128,5% off coupon,1000000,12/06/2024,TEST1_percent
+129,5% off coupon,1000000,12/06/2024,TEST1_percent
+130,5% off coupon,1000000,12/06/2024,TEST1_percent
+131,5% off coupon,1000000,12/06/2024,TEST1_percent
+132,5% off coupon,1000000,12/06/2024,TEST1_percent
+133,5% off coupon,1000000,12/06/2024,TEST1_percent
+134,5% off coupon,1000000,12/06/2024,TEST1_percent
+135,5% off coupon,1000000,12/06/2024,TEST1_percent
+136,5% off coupon,1000000,12/06/2024,TEST1_percent
+137,5% off coupon,1000000,12/06/2024,TEST1_percent
+138,5% off coupon,1000000,12/06/2024,TEST1_percent
+139,5% off coupon,1000000,12/06/2024,TEST1_percent
+140,5% off coupon,1000000,12/06/2024,TEST1_percent
+141,5% off coupon,1000000,12/06/2024,TEST1_percent
+142,5% off coupon,1000000,12/06/2024,TEST1_percent
+143,5% off coupon,1000000,12/06/2024,TEST1_percent
+144,5% off coupon,1000000,12/06/2024,TEST1_percent
+145,5% off coupon,1000000,12/06/2024,TEST1_percent
+146,5% off coupon,1000000,12/06/2024,TEST1_percent
+147,5% off coupon,1000000,12/06/2024,TEST1_percent
+148,5% off coupon,1000000,12/06/2024,TEST1_percent
+149,5% off coupon,1000000,12/06/2024,TEST1_percent
+150,5% off coupon,1000000,12/06/2024,TEST1_percent
+151,5% off coupon,1000000,12/06/2024,TEST1_percent
+152,5% off coupon,1000000,12/06/2024,TEST1_percent
+153,5% off coupon,1000000,12/06/2024,TEST1_percent
+154,5% off coupon,1000000,12/06/2024,TEST1_percent
+155,5% off coupon,1000000,12/06/2024,TEST1_percent
+156,5% off coupon,1000000,12/06/2024,TEST1_percent
+157,5% off coupon,1000000,12/06/2024,TEST1_percent
+158,5% off coupon,1000000,12/06/2024,TEST1_percent
+159,5% off coupon,1000000,12/06/2024,TEST1_percent
+160,5% off coupon,1000000,12/06/2024,TEST1_percent
+161,5% off coupon,1000000,12/06/2024,TEST1_percent
+162,5% off coupon,1000000,12/06/2024,TEST1_percent
+163,5% off coupon,1000000,12/06/2024,TEST1_percent
+164,5% off coupon,1000000,12/06/2024,TEST1_percent
+165,5% off coupon,1000000,12/06/2024,TEST1_percent
+166,5% off coupon,1000000,12/06/2024,TEST1_percent
+167,5% off coupon,1000000,12/06/2024,TEST1_percent
+168,5% off coupon,1000000,12/06/2024,TEST1_percent
+169,5% off coupon,1000000,12/06/2024,TEST1_percent
+170,5% off coupon,1000000,12/06/2024,TEST1_percent
+171,5% off coupon,1000000,12/06/2024,TEST1_percent
+172,5% off coupon,1000000,12/06/2024,TEST1_percent
+173,5% off coupon,1000000,12/06/2024,TEST1_percent
+174,5% off coupon,1000000,12/06/2024,TEST1_percent
+175,5% off coupon,1000000,12/06/2024,TEST1_percent
+176,5% off coupon,1000000,12/06/2024,TEST1_percent
+177,5% off coupon,1000000,12/06/2024,TEST1_percent
+178,5% off coupon,1000000,12/06/2024,TEST1_percent
+179,5% off coupon,1000000,12/06/2024,TEST1_percent
+180,5% off coupon,1000000,12/06/2024,TEST1_percent
+181,5% off coupon,1000000,12/06/2024,TEST1_percent
+182,5% off coupon,1000000,12/06/2024,TEST1_percent
+183,5% off coupon,1000000,12/06/2024,TEST1_percent
+184,5% off coupon,1000000,12/06/2024,TEST1_percent
+185,5% off coupon,1000000,12/06/2024,TEST1_percent
+186,5% off coupon,1000000,12/06/2024,TEST1_percent
+187,5% off coupon,1000000,12/06/2024,TEST1_percent
+188,5% off coupon,1000000,12/06/2024,TEST1_percent
+189,5% off coupon,1000000,12/06/2024,TEST1_percent
+190,5% off coupon,1000000,12/06/2024,TEST1_percent
+191,5% off coupon,1000000,12/06/2024,TEST1_percent
+192,5% off coupon,1000000,12/06/2024,TEST1_percent
+193,5% off coupon,1000000,12/06/2024,TEST1_percent
+194,5% off coupon,1000000,12/06/2024,TEST1_percent
+195,5% off coupon,1000000,12/06/2024,TEST1_percent
+196,5% off coupon,1000000,12/06/2024,TEST1_percent
+197,5% off coupon,1000000,12/06/2024,TEST1_percent
+198,5% off coupon,1000000,12/06/2024,TEST1_percent
+199,5% off coupon,1000000,12/06/2024,TEST1_percent
+200,5% off coupon,1000000,12/06/2024,TEST1_percent
+201,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+202,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+203,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+204,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+205,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+206,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+207,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+208,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+209,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+210,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+211,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+212,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+213,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+214,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+215,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+216,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+217,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+218,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+219,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+220,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+221,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+222,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+223,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+224,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+225,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+226,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+227,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+228,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+229,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+230,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+231,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+232,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+233,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+234,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+235,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+236,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+237,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+238,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+239,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+240,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+241,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+242,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+243,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+244,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+245,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+246,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+247,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+248,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+249,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+250,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+251,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+252,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+253,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+254,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+255,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+256,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+257,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+258,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+259,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+260,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+261,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+262,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+263,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+264,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+265,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+266,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+267,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+268,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+269,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+270,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+271,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+272,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+273,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+274,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+275,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+276,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+277,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+278,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+279,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+280,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+281,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+282,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+283,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+284,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+285,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+286,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+287,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+288,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+289,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+290,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+291,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+292,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+293,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+294,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+295,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+296,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+297,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+298,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+299,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
+300,"50,000UZS fixed",1000000,12/06/2024,TEST2_fixed
