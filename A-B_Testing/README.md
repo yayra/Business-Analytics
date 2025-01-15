@@ -1,33 +1,32 @@
 # Evaluating the Impact of Discount Coupon Types on Order Conversion Rates: *A/B Testing with Difference-in-Differences (DiD) Method*
 
 ## Background
-<p align="justify">In the competitive world of online business, increasing customer retention and boosting order conversion rates are key objectives for e-commerce businesses. One common strategy to achieve these goals is by offering discount coupons to retain customers who are at risk of leaving, which can be presented in two main forms: fixed amount discounts and percentage-off discounts.</p>
-
-<p align="justify">This project aims to answer the following question: Which type of discount coupon yields a higher order conversion rate – a <b>50,000 UZS fixed amount discount</b> or a <b>5% off discount</b>?</p>
-
-<p align="justify">The Marketing Department of an e-commerce platform in Uzbekistan is particularly interested in determining which of these two discount strategies is more effective in driving order conversion rates. To assess this, they have implemented an <b>A/B testing</b> and utilized the <b>Difference-in-Differences (DiD)</b> methodology to measure the impact of the two coupon types while excluding potential confounding variables and underlying trends that could affect the results.</p>
+<p align="justify">In the competitive world of online business, customer retention and order conversion rates are critical objectives for e-commerce companies. A widely used strategy to achieve these goals is offering discount coupons. These incentives help keep customers engaged and encourage them to place orders, ultimately driving higher conversion rates. Discount coupons typically come in two main forms: fixed-amount discounts and percentage-off discounts. This project aims to answer the following question: Which type of discount coupon yields a higher order conversion rate: a <b>50,000 UZS fixed amount discount</b> or a <b>5% off discount</b>?</p>
 
 ## Test Scenario
+<p align="justify"> The Marketing Department of an e-commerce platform in Uzbekistan is particularly interested in determining which of these two discount strategies is more effective in driving order conversion rates. To assess this, they have implemented an <b>A/B testing</b> and utilized the <b>Difference-in-Differences (DiD)</b> methodology to measure the impact of the two coupon types while excluding potential confounding variables and underlying trends that could affect the results.</p>
 
 ### 1. Test Participants (300 in total)
 The test involves a total of 300 customers of the e-commerce website, divided into two groups:
 - **Control group**: 100 customers who did not receive any discount coupons during the testing period.
 - **Treatment group**: 200 customers who received one of the two types of discount coupons:
-    - 100 customers: *50,000 UZS fixed amount discount* coupon (valid on purchases over 1 million UZS);
-    - 100 customers: *5% off discount* coupon (valid on purchases over 1 million UZS, with a maximum discount of 70,000 UZS).
+    - 100 customers: *50,000 UZS fixed amount discount* coupon;
+    - 100 customers: *5% off discount* coupon (with a maximum discount of 70,000 UZS).
+
+**Note**: *Discount coupons were offered only to customers who made purchases exceeding 1 million UZS in the month preceding the test.* 
 
 The following table summarizes the setup:
 
 | Group classification | Discount Type                           | Number of Customers |
 |---------------------|-----------------------------------------|---------------------|
-| Control Group       | No discount                             | 150                 |
-| Treatment Group 1   | 50,000 UZS fixed amount discount        | 150                 |
-| Treatment Group 2   | 5% off discount coupon (up to 70,000 UZS)| 150                |
+| Control Group       | No discount                             | 100                 |
+| Treatment Group 1   | 50,000 UZS fixed amount discount        | 100                 |
+| Treatment Group 2   | 5% off discount coupon (up to 70,000 UZS)| 100                |
 
 ### 2. Budget Allocated for Conducting the A/B Test
-The Marketing Department secured a budget of no more than **1,000 USD (12 million UZS)**, which was allocated as follows:
-- 5 million UZS for 100 coupons offering a 50,000 UZS fixed amount discount;
-- 7 million UZS for 100 coupons offering a 5% off discount (including a maximum discount of 70,000 UZS).
+The Marketing Department secured a budget of no more than **1,000 USD (approximately 12 million UZS)**, which was allocated as follows:
+- **5 million UZS** for 100 coupons offering a 50,000 UZS fixed amount discount;
+- **7 million UZS** for 100 coupons offering a 5% off discount, with a maximum discount cap of 70,000 UZS per coupon.
 
 ### 2. Test Period
 <p align="justify">The A/B test was conducted from <b>June 5 to June 18, 2024</b>, with both types of discount coupons being distributed on June 12, 2024.</p>
@@ -41,7 +40,7 @@ The timeline is as follows:
 *Fixed amount discount* coupon (50,000 UZS) will result in a higher order conversion rate compared to the *5% off discount* coupon.
 
 ### 4. Dependent Variable
-<p align="justify">The dependent variable in this study is the <b>order conversion rate (Conversion Rate (CVR))</b>, defined as the proportion of customers who placed at least one order either before or after the treatment period.</p>
+<p align="justify">The dependent variable in this study is the <b>order conversion rate (CVR)</b>, defined as the proportion of customers who placed at least one order either before or after the treatment period(recorded as 1).</p>
 
 ### 5. Independent Variable
 The independent variable is the type of discount coupon provided:
@@ -57,17 +56,17 @@ The formula for calculating the DiD is as follows:
 
 <p>Where:</p>
 <div style="line-height: 1.2; margin-bottom: 15px;">
-    𝑎 = count of orders in the treatment group before treatment;<br>
-    A = count of orders in the treatment group after treatment;<br>
-    𝑏 = count of orders in the control group before treatment;<br>
-    𝐵 = count of orders in the control group after treatment.
+    𝑎 = count of distinct customers in the treatment group who made purchases before the treatment period;<br>
+    A = count of distinct customers in the treatment group who made purchases after the treatment period;<br>
+    𝑏 = count of distinct customers in the control group who made purchases before the treatment period;<br>
+    𝐵 = count of distinct customers in the control group who made purchases after the treatment period.
 </div>
 
 <p><b>Note</b>: This analysis focuses on the application of the DiD methodology in A/B testing within the scenario of a limited budget, which the Marketing Department was able to secure for executing the test, not exceeding 1,000 USD (12 million UZS).</p>
 
 ## About the Dataset
 
-The dataset used for this project consists of two files: *orders.csv* and *coupons.csv*. Below is the metadata for each dataset:
+The dataset used for this project consists of two files: *order_master_did.csv* and *coupon_target_table.csv*. Below is the metadata for each dataset:
 
 #### **Coupons Dataset**
 
