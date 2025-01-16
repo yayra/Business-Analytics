@@ -28,7 +28,7 @@ The Marketing Department secured a budget of no more than **1,000 USD (approxima
 - **5 million UZS** for 100 coupons offering a 50,000 UZS fixed amount discount;
 - **7 million UZS** for 100 coupons offering a 5% off discount, with a maximum discount cap of 70,000 UZS per coupon.
 
-### 2. Test Period
+### 3. Test Period
 <p align="justify">The A/B test was conducted from <b>June 5 to June 18, 2024</b>, with both types of discount coupons being distributed on June 12, 2024.</p>
 The timeline is as follows: 
 
@@ -36,18 +36,18 @@ The timeline is as follows:
 - June 12, 2024: Treatment date (coupon distribution);
 - June 12–18, 2024: Post-treatment period.
 
-### 3. Hypothesis testing
+### 4. Hypothesis testing
 *Fixed amount discount* coupon (50,000 UZS) will result in a higher order conversion rate compared to the *5% off discount* coupon.
 
-### 4. Dependent Variable
+### 5. Dependent Variable
 <p align="justify">The dependent variable in this study is the <b>order conversion rate (CVR)</b>, defined as the proportion of customers who placed at least one order either before or after the treatment period(recorded as 1).</p>
 
-### 5. Independent Variable
+### 6. Independent Variable
 The independent variable is the type of discount coupon provided:
 - 50,000 UZS fixed amount discount coupon;
 - 5% off discount coupon.
 
-### 6. A/B Testing Evaluation Method – Difference-in-Differences (DiD)
+### 7. A/B Testing Evaluation Method – Difference-in-Differences (DiD)
 <p align="justify">The <b>Difference-in-Differences (DiD)</b> method measures the change in order conversion rates for the treatment group before and after the treatment, as well as the change in order conversion rates for the control group over the same period. By comparing these changes, DiD isolates the effect of the other variables which can affect the order conversion rate.</p>
 
 The formula for calculating the DiD is as follows:
@@ -62,11 +62,11 @@ The formula for calculating the DiD is as follows:
     𝐵 = count of distinct customers in the control group who made purchases after the treatment period.
 </div>
 
-<p><b>Note</b>: This analysis focuses on the application of the DiD methodology in A/B testing within the scenario of a limited budget, which the Marketing Department was able to secure for executing the test, not exceeding 1,000 USD (12 million UZS).</p>
+<p align="justify"><b>Note</b>: This analysis focuses on the application of the DiD methodology in A/B testing within the scenario of a limited budget, which the Marketing Department was able to secure for executing the test, not exceeding 1,000 USD (12 million UZS).</p>
 
-## About the Dataset
+### 8. About the Dataset
 
-The dataset used for this project consists of two files: *order_master_did.csv* and *coupon_target_table.csv*. Below is the metadata for each dataset:
+<p align="justify">The dataset used for this project consists of two files: *order_master_did.csv* and *coupon_target_table.csv*. Below is the metadata for each dataset:</p>
 
 #### **Coupons Dataset**
 
@@ -85,6 +85,8 @@ The dataset used for this project consists of two files: *order_master_did.csv* 
     </li>
 </ul>
 
+![SQL Query](https://github.com/yayra/Business-Analytics/blob/78b7fdadbcd7a8cdb8018888bba69e2b3f08aa3a/A-B_Testing/images/coupons.png) 
+
 #### **Orders Dataset**
 
 <p align="justify">This dataset provides details about customer orders and includes the following columns:</p>
@@ -94,21 +96,47 @@ The dataset used for this project consists of two files: *order_master_did.csv* 
     <li><b>ord_dt</b>: Date the order was placed, datatype: varchar(50).</li>
 </ul>
 
-## Tools Used
+![SQL Query](https://github.com/yayra/Business-Analytics/blob/78b7fdadbcd7a8cdb8018888bba69e2b3f08aa3a/A-B_Testing/images/orders.png)
+
+### 9. Tools Used
 <p align="justify"><b>MySQL</b> will be utilized for data exploration and to conduct the A/B testing.</p>
 
-## A/B Test Result
+*SQL Code Snippet with DiD analysis* 
+
+![SQL Query](https://github.com/yayra/Business-Analytics/blob/78b7fdadbcd7a8cdb8018888bba69e2b3f08aa3a/A-B_Testing/images/SQL_code.png)
+
+*Output:* 
+
+![SQL Query](https://github.com/yayra/Business-Analytics/blob/78b7fdadbcd7a8cdb8018888bba69e2b3f08aa3a/A-B_Testing/images/output.png)
+
+### 10. A/B Test Result
 <p align="justify">The results of the A/B test are summarized in the table below, highlighting the changes in CVR (order conversion rate) for each group during the 'before' and 'after' treatment periods.</p>
 
-<p align="justify">The comparison of the 'before' and 'after' treatment periods highlights changes in order CVR across groups. Using the DiD method:</p>
+![SQL Query](https://github.com/yayra/Business-Analytics/blob/78b7fdadbcd7a8cdb8018888bba69e2b3f08aa3a/A-B_Testing/images/DiD_result.png)
+
+<p align="justify">
+The analysis comparing the 'before' and 'after' treatment periods with the DiD method highlights significant changes in order conversion rates (CVR) across groups. The following observations were made:
+</p>
 
 <ul>
-    <li>The <b>50,000 UZS fixed amount coupon</b> resulted in an <b>8% increase</b> in order CVR compared to the control group.</li>
-    <li>The <b>5% off coupon</b> demonstrated a higher <b>11% increase</b> in order CVR relative to the control group.</li>
+    <li>The control group experienced a <b>7% decrease</b> in order CVR during the test period.</li>
+    <li>The <b>50,000 UZS fixed-amount coupon</b> led to an <b>11% increase</b> in order CVR compared to the control group.</li>
+    <li>The <b>5% off coupon</b> demonstrated a <b>17% increase</b> in order CVR relative to the control group, outperforming the fixed-amount coupon.</li>
 </ul>
 
-<p align="justify">Although the <b>5% off coupon</b> exhibited a slightly higher order CVR increase compared to the fixed amount coupon, the <b>3% difference</b> between the two treatment groups is relatively minor.</p>
+<p align="justify">
+Although the <b>5% off coupon</b> resulted in a higher CVR increase compared to the fixed-amount coupon, the <b>6% difference</b> between the two treatment groups is relatively modest.
+</p>
 
-<p align="justify">While the initial hypothesis suggested that a <b>fixed amount discount (50,000 UZS)</b> would lead to a higher order conversion rate compared to the <b>5% off coupon</b>, the <b>3% difference</b> observed in order CVR using the DiD method does not provide strong enough evidence to fully reject this hypothesis.</p>
+<p align="justify">
+The initial hypothesis suggested that the <b>fixed-amount discount (50,000 UZS)</b> would yield a higher CVR than the <b>5% off coupon</b>. However, the observed <b>6% difference</b>, as revealed by the DiD analysis, suggests otherwise, indicating that the initial hypothesis may not hold based on the available data and test results.
+</p>
 
-<p align="justify">However, the analysis clearly supports the broader conclusion that <b>offering discounts—regardless of their structure—consistently enhances CVR compared to not providing any discounts</b>.</p>
+<p align="justify">
+While this study focuses primarily on CVR, other business metrics—such as average purchase value—should also be considered to guide decisions regarding the optimal coupon type. Nevertheless, the analysis strongly supports the overarching conclusion that <b>offering discounts, regardless of their structure, consistently improves CVR compared to providing no discounts at all</b>.
+</p>
+
+
+
+
+
