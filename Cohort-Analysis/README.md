@@ -139,7 +139,9 @@ The retention rate analysis results will be visualized using Python’s Plotly l
 
 ---
 
-## Findings
+## Cohort Analysis Findings 
+
+![Result visualization](https://github.com/yayra/Business-Analytics/blob/60696cf0ecebb95c69f6c89b96e3c94105f00f97/Cohort-Analysis/images/Retention_rate_result.png)
 
 - **Retention Trends**: The cohort receiving promocode discounts showed higher retention rates starting from Week 1, with retention rates consistently higher throughout the four-week period.
 - **Conclusion**: The hypothesis that promocode discounts for first-time purchases lead to higher retention was supported by the data.
