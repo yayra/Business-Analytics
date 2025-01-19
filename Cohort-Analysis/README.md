@@ -1,11 +1,11 @@
-# **Cohort Analysis: Evaluating the Impact of Promotional Discounts on Retention for First-Time Shoppers**
+# **Cohort Analysis: Evaluating the Impact of Promotional Discounts on Retention**
 
 <div style="text-align: justify;">
 
 ## Objective
-This project examines the impact of a new customer acquisition strategy—offering promotional discounts (promocodes) to first-time shoppers—on customer retention.
+This project examines the impact of a new customer acquisition strategy — offering promotional discounts (promocodes) to first-time shoppers — on customer retention.
 
-Customer acquisition and retention are critical components of the AARRR Framework (Acquisition, Activation, Retention, Referral, Revenue), often referred to as the "Pirate Framework." Growth strategists, or "growth hackers," develop innovative approaches to attract and retain customers while employing data-driven methods to evaluate their effectiveness.
+Customer acquisition and retention are critical components of the AARRR Framework (Acquisition, Activation, Retention, Referral, Revenue), often referred to as the "Pirate Framework." Growth strategists, or "growth hackers," develop strategies to attract and retain customers while employing data-driven methods to evaluate their effectiveness.
 
 The goal of this analysis is to determine whether providing a promocode to first-time customers increases their likelihood of remaining engaged with the business over time.
 
@@ -14,14 +14,15 @@ The goal of this analysis is to determine whether providing a promocode to first
 ## Scope and Metrics
 This project focuses on two key metrics of the AARRR Framework:
 
-1. **Acquisition**: Assess the effectiveness of using first-purchase promocode discounts in attracting new customers.
-2. **Retention**: Evaluate whether this strategy improves the retention rate of first-time customers over a 4-week period.
+1. **Customer Acquisition**: Analyze the effectiveness of first-purchase promocode discount strategy in attracting new customers to the platform.
+2. **Customer Retention**: Evaluate whether this strategy improves the retention rate of first-time customers over a 4-week period. 
 
 ---
 
 ## Test Scenario
-The marketing team of an e-commerce platform introduced a promocode discount for first-time customers to increase acquisition. They aim to answer:
-- Does offering promotional discounts to first-time customers lead to higher retention compared to not offering them?
+The marketing team of an e-commerce platform introduced a promotional discount strategy by offering promocodes to first-time customers as a means of boosting customer acquisition. They now intend to assess the effectiveness of this approach through data-driven analysis to determine whether funding promocodes remains a worthwhile investment. Specifically, they aim to address the following question:
+
+ - **Does providing promotional discounts to first-time customers result in higher retention rates compared to those who do not receive such discounts?**
 
 ### Key Assumptions and Scope
 - The analysis is limited to determining the retention impact of the promocode strategy.
@@ -40,90 +41,90 @@ Customers who received a promocode discount for their first purchase exhibit hig
 
 ## Test Setup
 - **Sample Size**:
-  - 1,000 customers who made their first purchase with a promocode.
-  - 1,000 customers who made their first purchase without a promocode.
-- **Test Period**: First-time purchases during January 2024.
+    The customers who made their first purchase during January 2024 will be divided into two cohorts:
+     - **Cohort 1**: Customers who made their purchase with a promocode (denoted as 1) - 1,000 customers.
+     - **Cohort 2**: Customers who made their purchase without a promocode (denoted as 0)- 1,000 customers.
 - **Retention Measurement**: Weekly retention rates over four weeks following the first purchase.
-
+- **Tools Used**
+     - **MySQL**: Data cleaning, transformation, and retention calculation.
+     - **Python**: Data manipulation with Pandas and visualization with Plotly.
 ---
 
 ## Analysis Workflow
 
-### Step 1: Data Preparation
-- **Exploration**: Clean and convert dataset columns (first_ord_dt, ord_dt) to appropriate date formats using SQL's `STR_TO_DATE()` function.
-- **Week Number Assignment**: Calculate the purchase week using SQL's `DATE_ADD()` function.
-- **Sequence Assignment**: Assign sequence numbers to purchases using the `ROW_NUMBER()` window function, partitioned by each customer.
-
-### Step 2: Cumulative Retention Calculation
-- **Define two cohorts**:
-  1. Customers with promocode (Cohort 1).
-  2. Customers without promocode (Cohort 2).
-- **Measure retention over four weeks using a cumulative retention method**. Customers who fail to make consecutive purchases are excluded from subsequent weeks.
-
-### Step 3: SQL Query and Data Visualization
+### SQL Query and Data Visualization
 - **Generate SQL queries** to calculate retention for each cohort.
 - **Load the SQL output into Python** using the `mysql.connector` library.
-- **Convert the output to a Pandas DataFrame**, calculate retention rates, and visualize the results using Python's Plotly library.
+- **Convert the output to a Pandas DataFrame**, calculate retention rates.
+- **Visualize** the results using Python's Plotly library.
 
+ ---
+ 
+### **STEP 1**: Data Preparation and Analysis Using MySQL 
+- **Exploration**: Clean and convert dataset columns (first_ord_dt, ord_dt) to appropriate date formats using SQL's `STR_TO_DATE()` function.
+- **Week Number Assignment**: Calculate the purchase week using SQL's `DATE_ADD(column, INTERVAL [] DAY)` function.
+- **Sequence Assignment**: Assign sequence numbers to purchases using the `ROW_NUMBER()` window function, partitioned by each customer.
+- **Cumulative retention calculation**: Measure cumulative retention over four weeks using a cumulative retention method.
+
+  The retention period for each customer is measured from the date of their first purchase (**Week 0**) through the end of a 4-week period (**Week 4**). Only customers who make 
+  purchases in consecutive weeks are included in the retention calculation. For example, if a customer made their first purchase on January 1 and then made purchases in Weeks 1, 2, and 4, their retention will be included only for Weeks 1 and 2. Starting from Week 3, the customer's purchases are excluded from the retention calculation, even if they made a purchase in Week 4.
+   
 ---
-
-## Findings
-- **Retention Trends**: The cohort receiving promocode discounts showed higher retention rates starting from Week 1, with retention rates consistently higher throughout the four-week period.
-- **Conclusion**: The hypothesis that promocode discounts for first-time purchases lead to higher retention was supported by the data.
-- **Recommendation**: Continue offering first-purchase promocode discounts as part of the customer acquisition strategy.
-
----
-
-## Tools Used
-- **SQL**: Data cleaning, transformation, and retention calculation.
-- **Python**: Data manipulation with Pandas and visualization with Plotly.
-## Test’s Logic
-
-### **STEP 1**: Customer Cohort Division
-The customers who made their first purchase during January 2024 will be divided into two cohorts:
-- **Cohort 1**: Customers who made their purchase with a promocode (denoted as 1).
-- **Cohort 2**: Customers who made their purchase without a promocode (denoted as 0).
-
-The retention period for each customer will be measured based on subsequent purchases after their first purchase date (denoted as **Week 0**) and until the end of a 4-week period (denoted as **Week 4**). This 4-week period after the first purchase will be divided into 4 weeks, each lasting 7 days.
-
-**Note**: Multiple purchases during the same week will be counted as 1 purchase.
-
-### **STEP 2**: Sequence Numbering & Retention Calculation
-Sequence numbering will be applied to every order after the first order for cumulative order confirmation. Since we are using a cumulative retention method, only customers who made at least one purchase each consecutive week will be included in the calculation.
-
-For example, if a customer made their first purchase on January 1 and then made purchases in the first, second, and fourth weeks after the first purchase, their retention will only be included in the first and second week’s retention. They will no longer be considered in the retention calculation from Week 3 onwards, even though they made a purchase in Week 4.
-
----
-
-## Workflow
-
-### **STEP 1**: Data Exploration
-The first step is to explore the datasets. The data type of the **`first_ord_dt`** and **`ord_dt`** columns will be converted from `varchar` to `date` using the `STR_TO_DATE(column, '%d/%m/%Y')` function.
-
-### **STEP 2**: Week Number Assignment
-The week number of each purchase will be determined using the `DATE_ADD(column, INTERVAL [] DAY)` function.
-
-### **STEP 3**: Sequence Assignment
-A sequence will be assigned to each purchase, grouped by week number, using the `ROW_NUMBER()` window function partitioned by each customer.
-
-### **STEP 4**: Cumulative Retention Calculation
-To measure cumulative retention over 4 consecutive weeks, the number of customers retained will be summed up, grouped by cohort and week range.
-
 **MySQL Code Snippet**:
 ```sql
--- Example SQL code for calculating cohort retention
-SELECT cohort, week_range, COUNT(DISTINCT customer_id) AS retained_customers
-FROM retention_data
-GROUP BY cohort, week_range;
+with 
+T1 as(
+	select distinct fot.mem_no,
+	       is_promotion,
+	       case
+	           when ord_dt = first_ord_dt then 0 -- The first purchase (week 0)
+	           when ord_dt > first_ord_dt and ord_dt <= date_add(first_ord_dt, interval 7 day) then 1 -- Purchases within the first week
+	           when ord_dt > date_add(first_ord_dt, interval 7 day) and ord_dt <= date_add(first_ord_dt, interval 14 day) then 2 -- Purchases within the second week
+	           when ord_dt > date_add(first_ord_dt, interval 14 day) and ord_dt <= date_add(first_ord_dt, interval 21 day) then 3 -- Purchases within the third week
+	           when ord_dt > date_add(first_ord_dt, interval 21 day) and ord_dt <= date_add(first_ord_dt, interval 28 day) then 4 -- Purchases within the fourth week
+	           else null
+	       end as week_number
+	from first_ord_table fot
+	left join order_master_cohort omc 
+	     on fot.mem_no = omc.mem_no
+),
+T2 as(
+	select mem_no,
+	       is_promotion,
+	       week_number,
+	       row_number() over(partition by mem_no order by week_number) as seq
+	from T1
+	where week_number is not null
+	order by 1,2,3,4
+)
+select is_promotion, -- cohort of customers (who made their purchse with promocode discount/without promocode discount)
+       case
+       	when week_number = 0 then 'w-0'
+       	when week_number = 1 and seq = 2 then 'w-1'
+       	when week_number = 2 and seq = 3 then 'w-2'
+       	when week_number = 3 and seq = 4 then 'w-3'
+       	when week_number = 4 and seq = 5 then 'w-4'
+       end as week_range, 
+       count(mem_no) as cust_cnt
+from T2
+group by 1, 2
+having week_range is not null
+order by 1, 2;
+
 ```
+
 </div>
 
+*Output:*
+
+![SQL output](https://github.com/yayra/Business-Analytics/blob/9aa121bbb98931290aeca98a065e40b8c7ca4b48/Cohort-Analysis/images/Output.png)
+
 <div style="text-align: justify;">
-From the output, we can observe that the number of customers started at 1000 in both cohorts in **Week 0**, and as we calculate cumulative retention, the number of retained customers steadily decreased each week, forming a funnel. It is clear from the SQL output that the retention rate is much higher in the cohort of first-time customers who received a promocode discount compared to those who did not.
+From the output, we can observe that the number of customers started at 1000 in both cohorts in <b>Week 0</b>, and as we calculate cumulative retention, the number of retained customers steadily decreased each week, forming a funnel. It is clear from the SQL output that the retention rate is much higher in the cohort of first-time customers who received a promocode discount compared to those who did not.
 
 ---
 
-### **STEP 5**: Database Connection Setup
+### **STEP 2**: Database Connection Setup
 To access the SQL query output and generate graphical representations of the analysis results, the database connection will be established using the `mysql.connector` library.
 
 ---
@@ -138,9 +139,10 @@ The retention rate analysis results will be visualized using Python’s Plotly l
 
 ---
 
-## **Cohort Analysis Result Summary**
-- The cohort that was provided with a promocode discount showed higher retention starting from the first week onwards.
-- Based on the analysis, the hypothesis that customers who received a promocode discount for their first purchase would have higher retention is supported.
-- The decision was made to continue offering the first-purchase promocode discount as part of the customer acquisition strategy.
+## Findings
+
+- **Retention Trends**: The cohort receiving promocode discounts showed higher retention rates starting from Week 1, with retention rates consistently higher throughout the four-week period.
+- **Conclusion**: The hypothesis that promocode discounts for first-time purchases lead to higher retention was supported by the data.
+- **Recommendation**: Continue offering first-purchase promocode discounts as part of the customer acquisition strategy.
 
 </div>
