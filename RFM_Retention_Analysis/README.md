@@ -17,7 +17,7 @@ Each customer is ranked within these factors, typically on a scale of 1 to 5, wh
 ---
 
 ## Project Overview
-In this project, I will assess customer value using the RFM model by segmenting customers into **percentiles** and applying weights derived from **logistic regression coefficients**. These coefficients will be utilized to compute a total RFM score, enabling the identification of key customer segments. Furthermore, an analysis of churned customers will be conducted to uncover behavioral patterns and derive actionable insights aimed at enhancing retention strategies.
+In this project, I will assess customer value using the RFM model by segmenting customers into *percentiles* and calculating a total RFM score by applying weights derived from *logistic regression coefficients*. Additionally, an *analysis of churned customers* will be conducted to uncover behavioral patterns and derive actionable insights for improving retention strategies
 
 ---
 
@@ -32,7 +32,8 @@ An e-commerce platform has a database of **1,000 customers** who made purchases 
 
 ## Dataset Overview
 
-The dataset includes the following key attributes:
+The dataset includes the following attributes:
+
 •	*mem_no*: Unique customer identifier
 
 •	*recency*: Number of days since the last purchase
@@ -70,25 +71,30 @@ The dataset includes the following key attributes:
 •	**Regularization**: Implement *L2* regularization (Ridge) to prevent overfitting and effectively handle multicollinearity. The logistic regression model is configured with the *‘lbfgs’* solver, known for its efficiency in handling small datasets, and the *maximum number of iterations* is set to *500* to ensure convergence.
 
 **Step 4: Model Development and Coefficient Extraction**
+
 •	Train the logistic regression model to predict customer retention and obtain the regression coefficients for RFM variables.
 
 **Step 5: RFM Score Normalization**
+
 •	Convert each RFM value into *percentiles* to standardize the scoring across all customers to ensure consistency in comparisons.
 
 **Step 6: Total RFM Score Calculation**
+
 •	Compute the total RFM score using the following weighted formula based on logistic regression coefficients:
+
 **Total Score**= *(Recency Score×Regression Coefficient)+(Frequency Score×Regression Coefficient)+(Monetary Score×Regression Coefficient)*
 
 **Step 7: Customer Segmentation Based on Total RFM Score**
-•	Customers were divided into five score categories based on their standardized total RFM scores:
 
-  o	**Category 1**: Best Customers – Highest Engagement.
+Customers were divided into five score categories based on their standardized total RFM scores:
+
+  • **Category 1**: Best Customers – Highest Engagement.
   
-  o	**Category 2**: Loyal Customers.
+  • **Category 2**: Loyal Customers.
   
-  o	**Category 4**: At-Risk Customers.
+  • **Category 4**: At-Risk Customers.
   
-  o	**Category 5**: Lost Customers.
+  •	**Category 5**: Lost Customers.
 
 ---
 
@@ -165,12 +171,15 @@ The analysis of churned customers reveals a strong correlation between lower RFM
 • **Category 5 (Lost Customers)**: 100% churn rate.
 
 Insights derived from logistic regression coefficients indicate that recency and frequency are the most significant factors influencing churn:
-**Impact of Recency**: Higher recency values (longer gaps since the last purchase) are strongly associated with an increased likelihood of churn. Customers in categories 4 and 5 had an average recency of 29 and 30 days, respectively, indicating prolonged inactivity before churn.
-**Impact of Frequency**: Lower purchase frequency correlates with higher churn rates. Customers in categories 4 and 5 made, on average, only one purchase before discontinuing their engagement with the platform.
+
+• **Impact of Recency**: Higher recency values (longer gaps since the last purchase) are strongly associated with an increased likelihood of churn. Customers in categories 4 and 5 had an average recency of 29 and 30 days, respectively, indicating prolonged inactivity before churn.
+
+• **Impact of Frequency**: Lower purchase frequency correlates with higher churn rates. Customers in categories 4 and 5 made, on average, only one purchase before discontinuing their engagement with the platform.
 
 ---
 
 **2. Monetary Analysis**
+
 A deeper examination of spending patterns among churned customers highlights the following insights:
 
 **Total Spending Contribution**: Customers in **Category 4** (359 individuals) collectively contributed over **120 million UZS**, representing a significant portion of total revenue.
@@ -178,50 +187,58 @@ A deeper examination of spending patterns among churned customers highlights the
 **Average Spending**: Customers in **Category 4** had a median total spending of **299,000 UZS**, higher than other segments, indicating a tendency to purchase higher-value items.
 
 **Spending Volatility**: The spending standard deviation for **Category 4** was **180,000 UZS**, reflecting significant variability in purchase amounts.
+
 Further analysis shows that churned customers in **Categories 4 and 5** typically made only one purchase, with notable differences in spending behavior:
 
-**Category 4**: Median purchase amount of **299,000 UZS**, indicating preference for higher-value products but a lack of repeat purchases.
+• **Category 4**: Median purchase amount of **299,000 UZS**, indicating preference for higher-value products but a lack of repeat purchases.
 
-**Category 5**: Median purchase amount of **179,000 UZS**, the lowest among all segments, suggesting a preference for lower-cost products before churn.
+• **Category 5**: Median purchase amount of **179,000 UZS**, the lowest among all segments, suggesting a preference for lower-cost products before churn.
 
 **Category 1** customers (Best Customers - Highest Engagement) represent a crucial segment with a relatively high retention rate of 76%, yet a churn rate of 24% remains. 
 On average, they made **4 purchases per month** and spent **282,000 UZS** per transaction. This suggests an opportunity to further strengthen loyalty through targeted engagement initiatives.
 
+---
+
 **3. Inferences and Business Implications**
+
 Based on the churn analysis, the following key conclusions and strategic implications can be drawn:
 
 **Churn Risk Factors**:
+
 Customers with higher recency and lower frequency values are at a significantly higher risk of churn.
 
-High-spending, low-frequency customers may have unmet expectations or experience dissatisfaction after their initial purchase, requiring improved post-purchase engagement strategies.
+High-spending, low-frequency customers (Category 4) may have unmet expectations or experience dissatisfaction after their initial purchase, requiring improved post-purchase engagement strategies.
 
 Increased volatility in spending behavior suggests irregular purchasing patterns, highlighting the need for personalized engagement and targeted communication.
+
+---
 
 **4. Retention Strategy Recommendations**:
 
 To mitigate churn and improve customer retention, the following strategic actions are recommended:
 
-   **1.	Enhanced Customer Engagement**:
+  **1. Enhanced Customer Engagement**:
 
-    •  Implement targeted re-engagement campaigns (e.g., personalized emails, push notifications) within the first 30 days of inactivity.
-    •  Leverage loyalty programs to incentivize repeat purchases.
-     
-  **2.	Improved Customer Onboarding**:
+  •  Implement targeted re-engagement campaigns (e.g., personalized emails, push notifications) within the first 30 days of inactivity.
   
-     •  Offer guided onboarding experiences and proactive support to ensure a positive first-time purchase experience.
-     • 	Provide educational content highlighting product benefits and usage.
+  •  Leverage loyalty programs to incentivize repeat purchases.
      
-  **3.	Tailored Promotions and Discounts**:
+  **2. Improved Customer Onboarding**:
   
-     • 	Introduce exclusive offers based on purchasing patterns to encourage repeat transactions.
-     • 	Offer discounts or bundles on high-value products to increase purchase frequency.
+  •  Offer guided onboarding experiences and proactive support to ensure a positive first-time purchase experience.
+  
+  **3. Tailored Promotions and Discounts**:
+  
+  •  Introduce exclusive offers based on purchasing patterns to encourage repeat transactions.
+    
+  •  Offer discounts or bundles on high-value products to increase purchase frequency.
      
-  **4.	Customer Feedback and Analysis**:
+  **4. Customer Feedback and Analysis**:
   
-     • 	Conduct surveys or collect feedback from churned customers to identify potential service or product gaps.
+  •  Conduct surveys or collect feedback from churned customers to identify potential service or product gaps.
      
   **5. Improved Customer Experience**: 
   
-     •  Address potential pain points by enhancing customer service, optimizing the checkout process, and offering post-purchase support to boost satisfaction and reduce churn risk.
+  •  Address potential pain points by enhancing customer service, optimizing the checkout process, and offering post-purchase support to boost satisfaction and reduce churn risk.
 
 </div>
