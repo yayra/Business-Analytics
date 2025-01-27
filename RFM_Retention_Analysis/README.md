@@ -1,4 +1,5 @@
-# **Customer Segmentation and Retention Analysis Using the RFM Model**
+# **RFM-Based Customer Segmentation and Retention Analysis**
+<a href="https://colab.research.google.com/drive/10C29RftA01msJso34xqJ6UyC9uyGmpuf?usp=sharing" target="_blank">Open in Colab via the provided link to explore interactive visualizations created with Plotly.</a>
 
 <div style="text-align: justify">
 
@@ -100,6 +101,13 @@ Customers were divided into five score categories based on their standardized to
 
 ## RFM Analysis Results and Recommendations 
 
+![Retention, monetary output](https://github.com/yayra/Business-Analytics/blob/32659452e904f40858ab4b6dbf5338a04f565cb3/RFM_Retention_Analysis/images/Retention%2C%20Monetary.png)
+
+
+![Recency, Frequency output](https://github.com/yayra/Business-Analytics/blob/32659452e904f40858ab4b6dbf5338a04f565cb3/RFM_Retention_Analysis/images/Recency%2C%20Frequency.png)
+
+
+
 **Customer Segmentation Insights:**
 
 **1.	Category 1 – Best Customers (Highest Engagement)**
@@ -155,6 +163,8 @@ Customers were divided into five score categories based on their standardized to
 ---
 
 ## Churn Analysis Results and Recommendations
+
+![Churn analysis output](https://github.com/yayra/Business-Analytics/blob/6918e0e0509b1e53fe4cd66432adaebef84d78be/RFM_Retention_Analysis/images/Churn_Rate.png)
 
 **1. Key Findings**
 
