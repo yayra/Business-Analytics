@@ -93,6 +93,8 @@ Customers were divided into five score categories based on their standardized to
   
   • **Category 2**: Loyal Customers.
   
+  • **Category 3**: (Potential Loyal Customers)
+    
   • **Category 4**: At-Risk Customers.
   
   •	**Category 5**: Lost Customers.
